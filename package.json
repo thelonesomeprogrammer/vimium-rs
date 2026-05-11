@@ -1,0 +1,15 @@
+{
+  "name": "vimium-rs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:js": "vite build",
+    "build:wasm": "wasm-pack build --target web --out-dir dist/wasm --release",
+    "build:manifest": "cp public/manifest.json dist/manifest.json",
+    "build": "npm run build:js && npm run build:wasm && npm run build:manifest"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
