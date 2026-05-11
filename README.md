@@ -20,11 +20,11 @@ vimium-rs/
 
 ## 2) `manifest.json`
 
-Located at `/home/runner/work/vimium-rs/vimium-rs/public/manifest.json`.
+Located at `public/manifest.json`.
 
 ## 3) Rust (`src/lib.rs`) logic
 
-Located at `/home/runner/work/vimium-rs/vimium-rs/src/lib.rs`.
+Located at `src/lib.rs`.
 
 Includes:
 - `VimiumCore` mode/state handling
@@ -34,7 +34,7 @@ Includes:
 
 ## 4) JavaScript Content Script (`content.js`)
 
-Located at `/home/runner/work/vimium-rs/vimium-rs/extension/content.js`.
+Located at `extension/content.js`.
 
 Includes:
 - Vim-style navigation (`j`, `k`, `h`, `l`, `d`, `u`, `gg`, `G`)
@@ -44,7 +44,7 @@ Includes:
 
 ## 5) Background Script (`background.js`)
 
-Located at `/home/runner/work/vimium-rs/vimium-rs/extension/background.js`.
+Located at `extension/background.js`.
 
 Includes:
 - Next/previous tab (`Shift+J/K` message targets)
@@ -63,8 +63,8 @@ Includes:
 3. Build bundled extension assets:
    - `npm run build`
 4. Build output:
-   - `/home/runner/work/vimium-rs/vimium-rs/dist`
+   - `dist/`
 5. Load in Chrome:
    - `chrome://extensions` → enable Developer mode
    - Click **Load unpacked**
-   - Select `/home/runner/work/vimium-rs/vimium-rs/dist`
+   - Select `dist/`
